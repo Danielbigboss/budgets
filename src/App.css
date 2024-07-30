@@ -1,0 +1,19 @@
+
+
+.my-bg{
+  background-color: rgba(0, 0, 0, 0.525);
+}
+.my-text{
+  font-size: 10px;
+}
+.my-scroll::-webkit-scrollbar{
+  width: .3rem;
+
+}
+
+.my-scroll::-webkit-scrollbar-thumb{
+  width: .3rem;
+  border-radius: 2rem;
+  height: 0.2rem !important;
+  background-color: rgb(182, 146, 79);
+}
