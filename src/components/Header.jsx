@@ -17,7 +17,7 @@ const Header = ({ setShowAdd, showAdd, HandleUser, AddMain, profile, btcReceieve
             </div>
 
             {showAdd && <div className="h-screen fixed top-0 left-0 w-full overflow-hidden my-bg">
-                <div className="w-11/12 md:w-96 mx-auto p-3 overflow-y-auto h-screen my-scroll mb-20">
+                <div className="w-11/12 md:w-96 mx-auto p-3 overflow-y-auto h-screen my-scroll">
                    
 
                     <div className="bg-white p-2 mt-3">
@@ -82,7 +82,7 @@ const Header = ({ setShowAdd, showAdd, HandleUser, AddMain, profile, btcReceieve
 
 
                         </form>
-                        <button className="bg-red-700 w-full text-white py-1 text-sm" onClick={() => setShowAdd(false)}>Close</button>
+                        <button className="bg-red-700 w-full text-white py-1 text-sm mb-20" onClick={() => setShowAdd(false)}>Close</button>
                     </div>
                 </div>
 
