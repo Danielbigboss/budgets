@@ -7,7 +7,7 @@ const Header = ({ setShowAdd, showAdd, HandleUser, AddMain, profile, btcReceieve
         <>
             <div className="flex items-center justify-between bg-white mb-5 p-3 rounded shadow">
                 <div className="flex gap-2 items-center">
-                    <img src={`${profile.profileurl ? `${profile.profileurl}` : `images/user.PNG`}`} alt="profile" className="w-9 h-9 object-cover border-slate-700 border rounded-full " />
+                    <img src={`${profile.profileurl ? `${profile.profileurl}` : `./public/images/user.PNG`}`} alt="profile" className="w-9 h-9 object-cover border-slate-700 border rounded-full" />
                     <div className="text-xs font-bold">Hi, {profile.username}</div>
                 </div>
                 <div className="relative" onClick={() => setNotify(true)}>
@@ -17,7 +17,7 @@ const Header = ({ setShowAdd, showAdd, HandleUser, AddMain, profile, btcReceieve
             </div>
 
             {showAdd && <div className="h-screen fixed top-0 left-0 w-full overflow-hidden my-bg">
-                <div className="w-11/12 md:w-96 mx-auto p-3 overflow-y-auto h-screen my-scroll">
+                <div className="w-11/12 md:w-96 mx-auto p-3 overflow-y-auto h-screen my-scroll mb-20">
                    
 
                     <div className="bg-white p-2 mt-3">
