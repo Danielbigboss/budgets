@@ -7,7 +7,7 @@ const Header = ({ setShowAdd, showAdd, HandleUser, AddMain, profile, btcReceieve
         <>
             <div className="flex items-center justify-between bg-white mb-5 p-3 rounded shadow">
                 <div className="flex gap-2 items-center">
-                    <img src={`${profile.profileurl ? `${profile.profileurl}` : `./public/images/user.PNG`}`} alt="profile" className="w-9 h-9 object-cover border-slate-700 border rounded-full" />
+                    <img src={`${profile.profileurl ? `${profile.profileurl}` : `images/user.PNG`}`} alt="profile" className="w-9 h-9 object-cover border-slate-700 border rounded-full" />
                     <div className="text-xs font-bold">Hi, {profile.username}</div>
                 </div>
                 <div className="relative" onClick={() => setNotify(true)}>
@@ -55,7 +55,7 @@ const Header = ({ setShowAdd, showAdd, HandleUser, AddMain, profile, btcReceieve
                     {/* ============= user details */}
 
 
-                    <div className="bg-white p-2 mt-6">
+                    <div className="bg-white p-2 mt-6 mb-36">
                         <div className="text-sm text-center font-semibold mb-3">Enter History Details</div>
 
                         <form onSubmit={AddMain}>
@@ -82,7 +82,7 @@ const Header = ({ setShowAdd, showAdd, HandleUser, AddMain, profile, btcReceieve
 
 
                         </form>
-                        <button className="bg-red-700 w-full text-white py-1 text-sm mb-20" onClick={() => setShowAdd(false)}>Close</button>
+                        <button className="bg-red-700 w-full text-white py-1 text-sm " onClick={() => setShowAdd(false)}>Close</button>
                     </div>
                 </div>
 
