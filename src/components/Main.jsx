@@ -9,7 +9,7 @@ const Main = ({profile, setShowAdd}) => {
 
         <>
             <div className="p-3 bg-orange-100 rounded-lg shadow">
-                <div className="flex gap-2 items-center ">
+            <div className="flex gap-2 items-center ">
                     <div>
                         <img src="images/bitcoin.png" alt="btc" className="w-9" />
                     </div>

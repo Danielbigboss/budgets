@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { FaArrowDown, FaUnlock } from "react-icons/fa"
+import { FaLock } from "react-icons/fa6"
 
 
 const History = ({ profile, main }) => {
@@ -25,6 +26,19 @@ const History = ({ profile, main }) => {
                                 </div>
                                 <div>
                                     <div className="text-sm font-bold text-red-700 text-end">${item.unlockedFee}</div>
+                                    <div className="my-text text-slate-500 font-semibold">9:30 pm</div>
+                                </div>
+
+                            </div>
+                            <div className="flex items-center justify-between p-3 border-b">
+                                <div className="flex gap-2 items-center">
+                                    <button className="bg-red-100 text-white p-2 rounded-full">   <FaLock /></button>
+                                    <div>
+                                        <div className="my-text  font-bold">Bitcoin locked</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="text-sm font-bold text-red-100 text-end">${item.btcReceivedIn$}</div>
                                     <div className="my-text text-slate-500 font-semibold">9:30 pm</div>
                                 </div>
 
